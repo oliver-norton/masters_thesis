@@ -7,6 +7,8 @@ Martin-Gutierrez, S., Losada, J. C., & Benito, R. M. (2023). Multipolar social s
 
 While the thesis is not publicly available, this code and README will help explain the processes involved, from data collection to analysis. Since a lot of code has been removed, not all file names correspond to exactly what are in the scripts. 
 
+At the end of this README there is a summary of my thesis, if you are interested in the context of the analysis. 
+
 <details>
 <summary><strong>Step 1: Data Collection</strong></summary>
 Twitter data is collected from a proprietary API over a few days. Data is collected by minute, hour, and day according to the API's rate limit. The enriched Tweet data (including Twitter handle, time, text, retweets, etc.) is stored in pickle files.
