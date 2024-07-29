@@ -1,7 +1,5 @@
-# Master's thesis code
-
-** "Measuring Mass Ideological Polarisation in Multiparty Political Systems: Application in the French Context" 
-** by Oliver Norton 
+# Master's thesis: Measuring Mass Ideological Polarisation in Multiparty Political Systems: Application in the French Context
+by Oliver Norton 
 
 In this respository you can read the code which I used to do my master's thesis. Sensitive information has been removed. The code used here is a combination of my own code, and some from a toolkit published by:
 
