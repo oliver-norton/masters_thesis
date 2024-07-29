@@ -5,7 +5,7 @@ In this repository, you can read the code used for my master's thesis. Sensitive
 
 Martin-Gutierrez, S., Losada, J. C., & Benito, R. M. (2023). Multipolar social systems: Measuring polarization beyond dichotomous contexts. *Chaos, Solitons & Fractals, 169*, 113244.
 
-While the thesis is not publicly available, this code and README will help explain the processes involved, from data collection to analysis. Note that not all file names correspond exactly to what is in the scripts due to code removal.
+While the thesis is not publicly available, this code and README will help explain the processes involved, from data collection to analysis. Since a lot of code has been removed, not all file names correspond to exactly what are in the scripts. 
 
 <details>
 <summary><strong>Step 1: Data Collection</strong></summary>
