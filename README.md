@@ -7,6 +7,8 @@ Martin-Gutierrez, S., Losada, J. C., & Benito, R. M. (2023). Multipolar social s
 
 While the thesis is not publicly available, this code and README will help explain the processes involved, from data collection to analysis. Since a lot of code has been removed, not all file names correspond to exactly what are in the scripts. 
 
+At the end of this README there is a summary of my thesis, if you are interested in the context of the analysis. 
+
 <details>
 <summary><strong>Step 1: Data Collection</strong></summary>
 Twitter data is collected from a proprietary API over a few days. Data is collected by minute, hour, and day according to the API's rate limit. The enriched Tweet data (including Twitter handle, time, text, retweets, etc.) is stored in pickle files.
@@ -43,4 +45,33 @@ Initial analysis involves collecting basic descriptive statistics and identifyin
 ![Visualization 1](./images/vis_1.png)
 
 ![Visualization 2](./images/vis_2.png)
+</details>
+
+<details>
+<summary><strong>Summary of master's thesis</strong></summary>
+
+Political polarisation can have negative impacts on democracy, such as legislative grid-
+lock, hate or dislike for other groups in society, and can result in less choice for voters.
+Political science researchers have therefore sought to measure political polarisation
+among the public. However, many of these measures of polarisation originate in two-
+party systems, making them unsuitable for some multiparty systems. In particular,
+survey-based measures assume that there is ideological constraint in a political system,
+i.e. that you can predict someone’s stance on an issue based on their left-right ideology.
+This assumption implies that opinion in that system is uni-dimensional, yet opinion in
+some multiparty systems is multi-dimensional. In my thesis, I utilise a newly developed
+measure of mass ideological polarisation that accounts for the multi-dimensionality of
+opinion in multiparty systems. Firstly, this method infers the ideology of individuals
+based on which politicians and political parties they retweet on Twitter. Secondly,
+it measures ideological polarisation among all individuals using a multi-dimensional
+measure of variance, called total variation. I apply this method to the case of the
+Twitter debate surrounding the 2022 French presidential elections. My results show
+that ideology among the French online public is only slightly polarised overall, how-
+ever, the supporters of the far-right political party Rassemblement National hold more
+extreme opinions compared to the supporters of the other parties. In addition, I find
+that the method of measuring polarisation is not sensitive to the choice of politicians,
+from which ideology is inferred, but is sensitive to how politically engaged or active
+members of the public are. These findings support the commonly held notion that
+highly politically engaged people online, and among the electorate, hold more extreme
+opinions.
+</details>
 </details>
