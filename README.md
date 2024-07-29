@@ -47,7 +47,7 @@ Initial analysis involves collecting basic descriptive statistics and identifyin
 
 <details>
 <summary><strong>Summary of master's thesis</strong></summary>
-Summary
+
 Political polarisation can have negative impacts on democracy, such as legislative grid-
 lock, hate or dislike for other groups in society, and can result in less choice for voters.
 Political science researchers have therefore sought to measure political polarisation
