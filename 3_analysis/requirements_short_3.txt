@@ -1,0 +1,6 @@
+seaborn
+networkx
+sympy
+scipy
+scikit-learn
+openpyxl
