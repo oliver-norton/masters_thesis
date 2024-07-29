@@ -1,7 +1,5 @@
-# Master's thesis code
-
-** "Measuring Mass Ideological Polarisation in Multiparty Political Systems: Application in the French Context" 
-** by Oliver Norton 
+# Master's thesis: Measuring Mass Ideological Polarisation in Multiparty Political Systems: Application in the French Context
+by Oliver Norton 
 
 In this respository you can read the code which I used to do my master's thesis. Sensitive information has been removed. The code used here is a combination of my own code, and some from a toolkit published by:
 
@@ -25,7 +23,13 @@ The collected data contains a lot of redundant data, and so excess columns are r
 
 ## Step 2: Keyword expansion 
 
-Step 0 is initially conducted with a limited list of keywords based on field knowledge. However, for the purposes of the thesis, a more comprehensive list is needed. To find more keywords for which to search for Tweets, we use an approach called 'keyword expansion'. Keyword expansion is Natural Language Processing (NLP) technique which assesses which words co-occur together or appear in similar contexts. Using this approach, more keywords can be found.
+Step 0 is initially conducted with a limited list of keywords based on field knowledge. However, for the purposes of the thesis, a more comprehensive list is needed. To find more keywords for which to search for Tweets, we use an approach called 'keyword expansion'. Keyword expansion is Natural Language Processing (NLP) technique which assesses which words co-occur together or appear in similar contexts. The code used is based on the approach used by: 
+
+King, G., Lam, P., & Roberts, M. E. (2017). Computer-assisted keyword and document
+set discovery from unstructured text. American Journal of Political Science,
+61 (4), 971–988.
+
+Using this approach, more keywords can be found.
 
 Steps 0, 1 and 2 are repeated until there is a suitable dataset.
 
