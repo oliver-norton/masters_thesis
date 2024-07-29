@@ -1,49 +1,46 @@
-# Master's thesis: Measuring Mass Ideological Polarisation in Multiparty Political Systems: Application in the French Context
-by Oliver Norton 
+# Master's Thesis: Measuring Mass Ideological Polarisation in Multiparty Political Systems: Application in the French Context
+**by Oliver Norton**
 
-In this respository you can read the code which I used to do my master's thesis. Sensitive information has been removed. The code used here is a combination of my own code, and some from a toolkit published by:
+In this repository, you can read the code used for my master's thesis. Sensitive information has been removed. The code is a combination of my own work and tools from:
 
-Martin-Gutierrez, S., Losada, J. C., & Benito, R. M. (2023). Multipolar social systems: Measuring polarization beyond dichotomous contexts. Chaos, Solitons & Fractals, 169, 113244.
+Martin-Gutierrez, S., Losada, J. C., & Benito, R. M. (2023). Multipolar social systems: Measuring polarization beyond dichotomous contexts. *Chaos, Solitons & Fractals, 169*, 113244.
 
-The thesis is not publicly available, however the code here and this readme will help explain the processed involved, from collection to analysis. Since a lot of code has been removed, not all file names correspond to exactly what are in the scripts. 
+While the thesis is not publicly available, this code and README will help explain the processes involved, from data collection to analysis. Note that not all file names correspond exactly to what is in the scripts due to code removal.
 
-## Step 0: Data collection
+<details>
+<summary><strong>Step 1: Data Collection</strong></summary>
+Twitter data is collected from a proprietary API over a few days. Data is collected by minute, hour, and day according to the API's rate limit. The enriched Tweet data (including Twitter handle, time, text, retweets, etc.) is stored in pickle files.
 
-Twitter data is collected from a proprietary API over a period of a few days. The data is collected by minute, hour and day according to the rate limit of the API. The collected data, which is an enriched table of Tweets data (including Twitter handle, time, text, retweets etc) is stored in pickle files.
+The data comes from an analytics platform using a saved query of keywords with boolean operators. For example, a query about US politics might be:
 
-The data is collected from an analytics platform based on a saved query of keywords with boolean operators. For example, a query about US politics may be the following:
+`("donald trump" OR "trump" OR "elections") AND ("2024" OR "2023" OR "US" OR "United States")`
 
-("donald trump" OR "trump" OR "elections") AND ("2024" OR "2023" OR "US" OR "United States")
+Twitter posts containing these keywords and fulfilling set parameters (e.g., Tweet created between 2023-10-10 and 2023-10-11) are collected.
 
-Twitter posts that contain the above keywords, as well as fulfilling set parameters (e.g. Tweet created between 2023-10-10 and 2023-10-11), will be collected.
+![Tweets by Day](./images/tweets_day.png)
+</details>
 
-## Step 1: Data processing 
+<details>
+<summary><strong>Step 2: Data Processing</strong></summary>
+The collected data contains redundant information, so excess columns are removed. The smaller pickle files are stored separately and then combined into a single file.
+</details>
 
-The collected data contains a lot of redundant data, and so excess columns are removed. The now smaller pickle files are stored in a separate folder, and then combined into a single file.
+<details>
+<summary><strong>Step 3: Keyword Expansion</strong></summary>
+Initially, a limited list of keywords is used based on field knowledge. However, for the thesis, a more comprehensive list is needed. We use 'keyword expansion', an NLP technique that assesses co-occurrence and contextual similarity of words, based on:
 
-## Step 2: Keyword expansion 
+King, G., Lam, P., & Roberts, M. E. (2017). Computer-assisted keyword and document set discovery from unstructured text. *American Journal of Political Science, 61*(4), 971–988.
 
-Step 0 is initially conducted with a limited list of keywords based on field knowledge. However, for the purposes of the thesis, a more comprehensive list is needed. To find more keywords for which to search for Tweets, we use an approach called 'keyword expansion'. Keyword expansion is Natural Language Processing (NLP) technique which assesses which words co-occur together or appear in similar contexts. The code used is based on the approach used by: 
+This approach helps identify additional keywords for searching Tweets. Steps 1, 2, and 3 are repeated until a suitable dataset is obtained.
 
-King, G., Lam, P., & Roberts, M. E. (2017). Computer-assisted keyword and document
-set discovery from unstructured text. American Journal of Political Science,
-61 (4), 971–988.
+![Keyword Expansion](./images/keyword_expansion.png)
+</details>
 
-Using this approach, more keywords can be found.
+<details>
+<summary><strong>Step 4: Analysis</strong></summary>
+Initial analysis involves collecting basic descriptive statistics and identifying/filtering 'opinion leaders' or elite actors whose Tweets are influential in the dataset and the context of the French elections. The main analysis uses this dataset and these elite actors to measure political polarisation between political parties during the 2022 French elections.
 
-Steps 0, 1 and 2 are repeated until there is a suitable dataset.
+![Visualization 1](./images/vis_1.png)
 
-## Step 4: 
-
-The initial analysis involves collecting basic descrptive statistics on the dataset and identifying and filtering out 'opinion leaders' or elite actors whose Tweets are influential in the dataset (and more broadly, in the context of the French elections). The main analysis uses the dataset and these elite actors to measure political polarisation between political parties during the 2022 French elections. 
-
-
-
-
-
-
-
-
-
-
-
+![Visualization 2](./images/vis_2.png)
+</details>
