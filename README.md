@@ -68,7 +68,7 @@ This approach helps identify additional keywords for searching Tweets. Steps 1, 
 </details>
 
 <details>
-<summary><strong>Step 4: Analysis</strong></summary>
+<summary><strong>Step 4: Results and Analysis</strong></summary>
 Initial analysis involves collecting basic descriptive statistics and identifying/filtering 'opinion leaders' or elite actors whose Tweets are influential in the dataset and the context of the French elections. The main analysis uses this dataset and these elite actors to measure political polarisation between political parties during the 2022 French elections.
 
 ![Visualization 1](./images/vis_1.png)
