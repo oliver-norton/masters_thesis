@@ -10,7 +10,15 @@ To measure polarisation online during the 2022 French general elections using da
 Python, UCloud, Git, LaTeX, NetworkX, Gephi
 
 ### Skills developed:
-Network analysis, data wrangling, machine learning, natural language processing (NLP), complex systems, graph theory, cloud computing, managing virtual machines
+- Network analysis
+- data wrangling
+- machine learning
+- natural language processing (NLP)
+- complex systems
+- graph theory
+- cloud computing
+- building machine learning models 
+- managing virtual machines (VM, VMs)
 
 ### Overview
 
