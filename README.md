@@ -12,6 +12,7 @@ Python, UCloud, Git, LaTeX, NetworkX, Gephi
 ### Skills developed:
 Network analysis, data wrangling, machine learning, natural language processing (NLP), complex systems, graph theory, cloud computing, managing virtual machines
 
+### Overview
 
 In this repository, you can read the code used for my master's thesis. Sensitive information has been removed. The code is a combination of my own work and tools from:
 
