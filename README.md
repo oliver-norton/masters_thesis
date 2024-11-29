@@ -1,5 +1,17 @@
-# (Master's Thesis) Measuring Mass Ideological Polarisation in Multiparty Political Systems: Application in the French Context
+# (Master's Thesis) Quantifying political polarisation online
 **by Oliver Norton**
+
+Full title: Measuring Mass Ideological Polarisation in Multiparty Political Systems: Application in the French Context
+
+### Goal:
+To measure polarisation online during the 2022 French general elections using data from Twitter/X, and a recently developed measure of polarisation for multiparty political systems.
+
+### Tools developed:
+Python, UCloud, Git, LaTeX, NetworkX, Gephi
+
+### Skills developed:
+Network analysis, data wrangling, machine learning, natural language processing (NLP), complex systems, graph theory, cloud computing, managing virtual machines
+
 
 In this repository, you can read the code used for my master's thesis. Sensitive information has been removed. The code is a combination of my own work and tools from:
 
